@@ -1,10 +1,18 @@
 {
   "name": "@cedarstudios/react-cedarmaps",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mapping service and highly detailed and spatially accurate GIS vector data application that covers the whole country of Iran.",
   "author": "cedarstudios",
   "license": "MIT",
   "repository": "https://github.com/cedarstudios/cedarmaps-react-sdk",
+  "keywords": [
+    "map",
+    "react",
+    "npm",
+    "module",
+    "node",
+    "javascript"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -15,10 +23,8 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "build": "npx webpack",
+    "predeploy": "cd example && npm install && npm run build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
