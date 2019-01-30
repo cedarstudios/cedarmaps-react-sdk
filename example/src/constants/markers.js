@@ -1,0 +1,6 @@
+export const CABS_MARKER_URL = 'http://maps.google.com/mapfiles/ms/icons/cabs.png'
+export const PARKINGLOT_MARKER_URL = 'http://maps.google.com/mapfiles/ms/icons/parkinglot.png'
+export const BLUE_DOT_MARKER_URL = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+export const RED_DOT_MARKER_URL = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+export const RED_PUSH_PIN_MARKER_URL = 'https://cdn1.iconfinder.com/data/icons/Map-Markers-Icons-Demo-PNG/256/Map-Marker-Drawing-Pin-Right-Pink.png'
+export const BLUE_PUSH_PIN_MARKER_URL = 'http://maps.google.com/mapfiles/ms/icons/blue-pushpin.png'
