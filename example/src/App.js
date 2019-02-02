@@ -54,7 +54,9 @@ class Example extends Component {
       >
         <RotationControl/>
         <ZoomControl/>
-        <ScaleControl/>
+        <ScaleControl
+          position='bottom-left'
+        />
         {this.renderPoints({points, Marker})}
         {this.renderLines({polyline, Layer, Feature})}
       </CedarMaps>
