@@ -16,7 +16,7 @@ Not a CedarMaps user yet? [Sign up for an account here](https://www.cedarmaps.co
 
 This guide will take you through the process of integrating CedarMaps into your React application.
 
-This package is a wrapper over [react-mapbox-gl](https://www.mapbox.com/mapbox-gl-js/api/) library.
+This package is a wrapper over [react-mapbox-gl](https://github.com/alex3165/react-mapbox-gl) library.
 
 ## Table of Contents
 - [Installation](#installation)
