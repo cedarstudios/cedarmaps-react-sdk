@@ -2,7 +2,7 @@
   <img src="http://api.cedarmaps.com/docs/img/cedarmaps-api.png" width="500"/>
 </a>
 
-# CedarMasp SDK for React
+# CedarMaps SDK for React
 
 ## What is CedarMaps?
 
