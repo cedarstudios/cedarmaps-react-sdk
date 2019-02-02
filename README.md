@@ -1,26 +1,47 @@
-![Logo](https://camo.githubusercontent.com/6af2fd8b1f7c23d44b39a785ac06ba27a469da1e/687474703a2f2f6170692e63656461726d6170732e636f6d2f646f63732f696d672f63656461726d6170732d6170692e706e67)
+<a href="https://www.cedarmaps.com">
+  <img src="http://api.cedarmaps.com/docs/img/cedarmaps-api.png" width="500"/>
+</a>
 
-# @cedarstudios/react-cedarmaps | [Documentation](https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md)
+# CedarMasp SDK for React
 
+## What is CedarMaps?
 
-#### React wrapper for [mapbox-gl-js](https://www.mapbox.com/mapbox-gl-js/api/).
-This package is a wrapper over `react-mapbox-gl` library.
+CedarMaps is the location data platform for mobile and web applications. We provide [building blocks](https://www.cedarmaps.com) to add location features like maps, search, and navigation into any experience you create. Use our simple and powerful APIs & SDKs and our open source libraries for interactivity and control.
 
-<br/><br/>
+## Sign up for CedarMaps
 
-## Getting Started
-1- Install package
+Not a CedarMaps user yet? [Sign up for an account here](https://www.cedarmaps.com/#demo). Once you’re signed in, all you need to start building is a CedarMaps access token.
+
+---
+
+This guide will take you through the process of integrating CedarMaps into your React application.
+
+This package is a wrapper over [react-mapbox-gl](https://www.mapbox.com/mapbox-gl-js/api/) library.
+
+## Table of Contents
+- [Installation](#installation)
+- [Rendering Component](#rendering-component)
+    - [Adding Markers](#adding-markers)
+- [Example](#example)
+
+## Installation
+
+**Npm**
 ```
 npm install @cedarstudios/react-cedarmaps --save
 ```
 
-2- Import package 
+**Yarn**
+```
+yarn add @cedarstudios/react-cedarmaps
+```
+
+## Rendering Component
 
 ```js
 import CedarMaps from '@cedarstudios/react-cedarmaps'
 ```
 
-3- Render component.
 ```js
 render() {
   return {
@@ -37,7 +58,10 @@ render() {
 }
 ```
 
-4- (Optional) Get `ReactMapboxGl` object and start adding Markers, Polylines or Controls you can read more about ReactMapboxGl in [Documentation](https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md)
+### Adding Markers
+
+Get `ReactMapboxGl` object and start adding Markers, Polylines or other controls. 
+
 ```js
 const {RotationControl, ZoomControl, ScaleControl} = CedarMaps.getReactMapboxGl()
  return (
@@ -57,10 +81,9 @@ const {RotationControl, ZoomControl, ScaleControl} = CedarMaps.getReactMapboxGl(
     )
 ```
 
-##Example:
+You can read more about `ReactMapboxGl` in [Mapbox Documentation](https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md)
 
-Please see [This full example Example App source](https://github.com/cedarstudios/cedarmaps-react-sdk/tree/master/example)
 
-##Methods:
+## Example
 
-- getReactMapboxGl(): Get React Mapboxgl reference object 
+You can consult [this example](https://github.com/cedarstudios/cedarmaps-react-sdk/tree/master/example) for getting acquainted with our package.
