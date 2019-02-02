@@ -1,12 +1,14 @@
 import React, {Component} from 'react'
 import CedarMaps from '@cedarstudios/react-cedarmaps'
 import {getBoundsFromPoints} from './helpers/utils'
+import {accessToken} from './constants/config'
 import {
   BLUE_DOT_MARKER_URL,
   CABS_MARKER_URL,
-  PARKINGLOT_MARKER_URL,
+  PARKINGLOT_MARKER_URL
 } from './constants/markers'
-import {polyline,center,points} from './constants/data'
+import {polyline, center, points} from './constants/data'
+
 class Example extends Component {
 
   renderLines({polyline, Layer, Feature}) {
@@ -45,7 +47,7 @@ class Example extends Component {
           height: '100vh',
           width: '100%'
         }}
-        token='YOUR ACCESS TOKEN'
+        token={accessToken}
         preserveDrawingBuffer={false}
         center={[mapCenter.lng, mapCenter.lat]}
         fitBounds={[sw, ne]}

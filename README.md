@@ -3,46 +3,64 @@
 # @cedarstudios/react-cedarmaps | [Documentation](https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md)
 
 
-
 #### React wrapper for [mapbox-gl-js](https://www.mapbox.com/mapbox-gl-js/api/).
+This package is a wrapper over `react-mapbox-gl` library.
+
 <br/><br/>
 
 ## Getting Started
-
+1- Install package
 ```
 npm install @cedarstudios/react-cedarmaps --save
 ```
 
-Example:
+2- Import package 
 
-Please see [This Example App](https://github.com/cedarstudios/cedarmaps-react-sdk/tree/master/example)
+```js
+import CedarMaps from '@cedarstudios/react-cedarmaps'
+```
 
-Methods:
+3- Render component.
+```js
+render() {
+  return {
+    <CedarMaps
+        containerStyle={{
+          height: '100vh',
+          width: '100%'
+        }}
+        token='YOUR ACCESS TOKEN'
+        center={[ 51.34379364705882,  35.74109568627451]}
+      >
+    </CedarMaps>
+  }
+}
+```
+
+4- (Optional) Get `ReactMapboxGl` object and start adding Markers, Polylines or Controls you can read more about ReactMapboxGl in [Documentation](https://github.com/alex3165/react-mapbox-gl/blob/master/docs/API.md)
+```js
+const {RotationControl, ZoomControl, ScaleControl} = CedarMaps.getReactMapboxGl()
+ return (
+      <CedarMaps
+        containerStyle={{
+          height: '100vh',
+          width: '100%'
+        }}
+        token='YOUR ACCESS TOKEN'
+        preserveDrawingBuffer={false}
+        center={[ 51.34379364705882,  35.74109568627451]}
+      >
+        <RotationControl/>
+        <ZoomControl/>
+        <ScaleControl/>
+      </CedarMaps>
+    )
+```
+
+##Example:
+
+Please see [This full example Example App source](https://github.com/cedarstudios/cedarmaps-react-sdk/tree/master/example)
+
+##Methods:
 
 - getReactMapboxGl(): Get React Mapboxgl reference object 
-
-
-## Components
-
-### Proxy components (proxy between React and Mapbox API)
-- ReactMapboxGL
-- Layer & Feature
-  - property `symbol` displays a mapbox symbol.
-  - property `line` displays a lineString.
-  - property `fill` displays a polygon.
-  - property `circle` displays a mapbox circle.
-  - property `raster` displays a mapbox raster tiles.
-  - property `fill-extrusion` displays a layer with extruded buildings.
-  - property `background` displays a mapbox background layer.
-  - property `heatmap` displays a mapbox heatmap layer.
-- Source
-- GeoJSONLayer
-
-### DOM components (normal React components)
-- ZoomControl
-- ScaleControl
-- RotationControl
-- Marker (Projected component)
-- Popup (Projected component)
-- Cluster
-
